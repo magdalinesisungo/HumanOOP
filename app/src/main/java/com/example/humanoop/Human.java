@@ -42,15 +42,17 @@ public class Human {
     public void sleep() {
         Log.d("Human","zzzzzzzzzz"); }
 
-    public int sleep(int hours){
+      public int sleep(int hours){
         return Log.d("Human","I am sleeping for" + ' ' + hours +' ' + "hours");
     }
 
     public void speak(String speech){
         Log.d("Human",speech);
     }
-    public int bithday(int increment){
+    public int birthday(){
+        int age = getAge();
         age = age + 1;
+        setAge(age);
         return age;
     }
 

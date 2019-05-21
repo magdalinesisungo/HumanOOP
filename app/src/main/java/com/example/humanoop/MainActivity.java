@@ -37,9 +37,15 @@ public class MainActivity extends AppCompatActivity {
         magdaline.sleep();
         magdaline.sleep(6);
         magdaline.speak("I love myself");
+        magdaline.birthday();
+        Log.d("Human","magdaline age is" + " " + magdaline.getAge() );
 
 
-        Anna kind = new Anna("Anna", 20,63);
+       Anna kind = new Anna("Anna",21,66,16);
+       kind.eat();
+       Log.d("Anna","Anna's weght is" + " " + kind.getWeight());
+       //kind.birthday();
+       //Log.d("Anna","Anna's new age is" + " " + kind.getAge());
 
     }
     @Override
